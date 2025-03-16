@@ -49,12 +49,12 @@ python3 golden_spiral.py
 - `compute_spiral()`: Computes the golden spiral overlay based on image dimensions.
 - `closest_point_and_distance()`: Determines the closest object to the golden spiral.
 - `draw_golden_spiral()`: Plots the golden spiral on the image.
-- `golden_spiral.py`: Loads images, detects objects, and overlays the golden spiral.
+- `golden_spiral.py`: Loads images, detects objects and overlays the golden spiral.
 
 ## Example Output
-After running the script, the processed images will have a golden spiral overlay and highlighted nearest objects.
+After running the script, the processed images will have a golden spiral overlay and highlight the nearest objects.
 
-![Example Output](golden-spiral/augmented_images/dog1-bounded.jpeg)
+![Example Output](/augmented_images/dog1-bounded.jpeg)
 
 
 ## Acknowledgments
