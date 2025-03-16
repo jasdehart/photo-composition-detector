@@ -54,7 +54,8 @@ python3 golden_spiral.py
 ## Example Output
 After running the script, the processed images will have a golden spiral overlay and highlight the nearest objects.
 
-![Example Output](golden-spiral/augmented_images/dog1-bounded.jpeg)
+![Example Output](https://github.com/user-attachments/assets/6a322acc-a9b8-4dc2-a500-af5204733bd3)
+
 
 
 ## Acknowledgments
