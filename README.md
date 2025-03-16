@@ -25,13 +25,16 @@ To save modules and verisons using pipreqs
 ```pip install pipreqs```
 
 To generate a requirements.txt file, all you have to do is run the following command.
-$ pipreqs $
+``` pipreqs ```
 
 If the requirements.txt file already exists, then run the following command:
-$ pipreqs --force $
+``` pipreqs --force ```
 
 
 Notes: 
+
+I ran into an issue with Torch and Numpy 2.2.4. Downgraded Numpy to 1.26.4
+```
 RuntimeError: Numpy is not available
-pip install "numpy<2"
 pip install numpy==1.26.4
+```

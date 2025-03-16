@@ -1,3 +1,7 @@
+matplotlib==3.10.1
+numpy==1.26.4
+pandas==2.2.3
 Pillow==11.1.0
-torch==2.6.0
+torch==2.2.2
 transformers==4.49.0
+ultralytics==8.3.91
