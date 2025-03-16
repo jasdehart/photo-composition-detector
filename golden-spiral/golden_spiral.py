@@ -77,8 +77,8 @@ def compute_spiral(topleft, topright, bottomright, pic, resolution=1000):
     scaled_y = scale * (y(t) - y0)
 
     # Calculate dynamic offsets (relative to image dimensions)
-    offset_x = width * 0.8 # Adjust this proportion to move the spiral horizontally
-    offset_y = height * 0.25 # Adjust this proportion to move the spiral vertically
+    offset_x = width * 0.72 # Adjust this proportion to move the spiral horizontally
+    offset_y = height * 0.3 # Adjust this proportion to move the spiral vertically
 
     # Shift the spiral to start at the dynamic offset
     scaled_x += offset_x
@@ -149,10 +149,17 @@ def draw_golden_spiral(img, point_list_x, point_list_y, line_width=3):
 # model loader and data handler
 model = YOLO("yolo11n.pt")
 
-img_folder = 'images/'
+img_folder = '../images/'
 files = []
 for file in glob.glob(img_folder+"*.jpeg"):
     files.append(file)
+
+import os
+
+# Ensure the image folder exists
+image_save_path = "./augmented_images/"
+if not os.path.exists(image_save_path):
+    os.makedirs(image_save_path)  # Create the folder if it doesn't exist
 
 
 results = model.predict(source=files, save=False)
@@ -160,7 +167,9 @@ results = model.predict(source=files, save=False)
 res_data = []
 for res in results:
     img_path = res.path
-    img_save = img_path.split('.')[0]+'-golden.'+img_path.split('.')[1]
+    img_rename = img_path.split('/')[-1].split('.')[0]
+    img_suffix= '-bounded.jpeg'
+    img_save = image_save_path+img_rename+img_suffix
     img_height, img_width = res.orig_shape
     
     obdata = []
@@ -197,5 +206,5 @@ for m, img in img_data_df.iterrows():
     for i, item in enumerate (img['object_data']):
         connecting_x, connecting_y, box_center_x, box_center_y, dist = closest_point_and_distance(list(zip(point_list_x, point_list_y)), item['x'], item['y'], item['width'], item['length'])
 
-    plt.show()
+    plt.savefig(f"{img['saved']}")
     plt.clf()
