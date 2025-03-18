@@ -23,6 +23,11 @@ pyenv activate composer
 pip install -r requirements.txt
 ```
 
+## Image Similarity
+A system that can compare two images and determine how similar they are. Uses ORB (a fast and efficient method) to extract features from images. ORB is less computationally expensive than SIFT.
+The code can be found in ```similarity/``` folder with run details.
+![image](https://github.com/user-attachments/assets/57aead9a-9107-442b-9f17-248bdc580055)
+
 
 ### Notes: 
 
