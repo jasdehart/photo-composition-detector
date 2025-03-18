@@ -114,6 +114,3 @@ python image_similarity.py --query query_image.jpg --folder images/
 ```
 
 This will compare `query_image.jpg` with all images in the `images/` folder, outputting the similarity scores and displaying the most similar images.
-```
-
-This Markdown should work perfectly when you copy and paste it into a `.md` file, keeping all the formatting like headers, lists, and code blocks.
