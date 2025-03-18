@@ -89,6 +89,9 @@ Similarity Score: 0.75
 
 The displayed images will be shown in Matplotlib's window, and the similarity score will appear in the center of the plot.
 
+![image](https://github.com/user-attachments/assets/57aead9a-9107-442b-9f17-248bdc580055)
+
+
 ## Notes
 
 - The images should be of a compatible format (JPEG, PNG, etc.) and should be properly accessible (i.e., the file paths should be correct).
