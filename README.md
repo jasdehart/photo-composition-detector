@@ -23,6 +23,16 @@ pyenv activate composer
 pip install -r requirements.txt
 ```
 
+## Image Similarity
+A system that can compare two images and determine how similar they are. Uses ORB (a fast and efficient method) to extract features from images. ORB is less computationally expensive than SIFT.
+The code can be found in ```similarity/``` folder with run details. \
+![image](https://github.com/user-attachments/assets/57aead9a-9107-442b-9f17-248bdc580055)
+
+## Golden Spiral 
+Detect objects in images and analyze their alignment with the golden spiral. The golden spiral is computed dynamically and overlaid on detected objects to visualize alignment.
+The code can be found in ```golden-spiral/``` folder with run details. \
+![image](https://github.com/user-attachments/assets/6a322acc-a9b8-4dc2-a500-af5204733bd3)
+
 
 ### Notes: 
 
