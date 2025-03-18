@@ -1,6 +1,5 @@
-Got it! Below is the README in proper Markdown format with headers, bullet points, and formatting:
 
-```markdown
+
 # Image Similarity Comparison
 
 This script compares an image to a folder of images using feature matching and displays the most similar images side by side along with the calculated similarity score. It leverages OpenCV's ORB feature detector and Brute-Force Matcher to compute similarity based on keypoint descriptors.
